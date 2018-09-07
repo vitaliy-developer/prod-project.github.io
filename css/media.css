@@ -43,7 +43,7 @@
 	.main_footer .social_wrap ul {
 		padding-left: 0;
 	}
-	.main_color_bg {
+	header {
 	background: url(../img/bg.jpg) no-repeat center top /cover;
 	}
 }
