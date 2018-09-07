@@ -47,6 +47,7 @@ section {
     color: #555; }
 .main_color_bg {
 	background: url(../img/bg.jpg) no-repeat center top /cover;
+  	height: 100vh;
 }
 .s_descr_wrap {
   text-align: center; }
