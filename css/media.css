@@ -44,8 +44,8 @@
 		padding-left: 0;
 	}
 	.main_color_bg {
-	/*background: url(../img/bg.jpg) no-repeat center top /cover;*/
-	background: url(../img/bg.jpg) no-repeat center top /cover!important;
+	background: red!important; 
+	/*background: url(../img/bg.jpg) no-repeat center top /cover!important;*/
 	}
 }
 
