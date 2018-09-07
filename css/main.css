@@ -45,7 +45,9 @@ section {
     text-align: left;
     margin-bottom: 30px;
     color: #555; }
-
+.main_color_bg {
+	background: url(../img/bg) no-repeat center top /cover;
+}
 .s_descr_wrap {
   text-align: center; }
   .s_descr_wrap .s_descr {
