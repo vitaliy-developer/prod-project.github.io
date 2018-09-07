@@ -17,7 +17,9 @@ body textarea:required:valid {
 
 .hidden {
   display: none; }
-
+.awesom-green {
+  color: #00cb00;
+}
 section,
 .main_head {
   position: relative; }
