@@ -246,7 +246,7 @@ svg path {
       display: table-cell;
       text-align: center;
       vertical-align: middle;
-	background: url(img/bg.jpg) no-repeat center top /cover!important;
+	background: url(../img/bg.jpg) no-repeat center top /cover!important;
 }
   .top_wrapper .top_text {
     display: inline-block;
