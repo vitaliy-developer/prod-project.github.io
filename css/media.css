@@ -43,8 +43,9 @@
 	.main_footer .social_wrap ul {
 		padding-left: 0;
 	}
-	header {
-	background: url(../img/bg.jpg) no-repeat center top /cover;
+	.main_color_bg {
+	/*background: url(../img/bg.jpg) no-repeat center top /cover;*/
+	background: url(../img/bg.jpg) no-repeat center top /cover!important;
 	}
 }
 
