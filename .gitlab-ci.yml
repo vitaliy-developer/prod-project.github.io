@@ -1,0 +1,51 @@
+stages:
+  - build
+  - test
+  - deploy
+  - production
+
+Docker-build:
+  # Official docker image.
+  image: docker:latest
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER"  -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - echo "Start docker build"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+    - echo "Successfully docker push"
+  # only:
+  #   - CI/CD
+
+Project test_1:
+  # Testing the project
+  stage: test
+  script:
+    - echo 'Start 1 testing the project'
+    - cat  ./tests_for_project/test.sh
+
+Project test_2:
+  # Testing the project
+  stage: test
+  script:
+    - echo 'Start 2 testing the project'
+    - cat  ./tests_for_project/test.sh
+
+Deploy to pre-production:
+  # deploy to pre-production
+  stage: deploy
+  script:
+    - echo 'TEST deploy to pre-production'
+  # only:
+  #   - master
+
+Deploy to production:
+  # deploy to production
+  stage: production
+  script:
+    - echo 'TEST deploy to production'
+  # only:
+  #   - master

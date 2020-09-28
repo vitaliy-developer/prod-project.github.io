@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-app
+  namespace: pre-production
+spec:
+  containers:
+  - name: web-app-container
+    image: 192.168.0.103:5050/root/project_web_site:v1
+    ports:
+      - containerPort: 67
+  imagePullSecrets:
+  - name: regcred
